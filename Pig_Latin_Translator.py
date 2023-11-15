@@ -10,7 +10,11 @@ punct = (',', '.', '!', '?', ':', ';')
 def main():
     # Create the main window
     root = tk.Tk()
+    root.iconbitmap('C:/Users/jorda/Desktop/Programming Projects/PigLatin_Translator/Pig_Icon.ico')
     root.title("Pig Latin Translator")
+    # Setting main window size and background color
+    root.geometry("600x350")
+    root.configure(bg="#3B6869")
 
     # Define fonts for various components
     title_font = Font(family="Helvetica", size=20, weight="bold")
@@ -40,7 +44,8 @@ def main():
 
         converted_text = '\n'.join(processed_lines)
 
-        time.sleep(2) # Wait for two seconds before proceeding
+        # Wait for two seconds before proceeding 
+        time.sleep(2) # This can be removed, I've only included so users feel the program has worked correctly, otherwise could seem too fast to have worked
 
         # Ask where to save the converted file
         save_filename = filedialog.asksaveasfilename(
@@ -96,10 +101,6 @@ def main():
     convert_button.grid(row=5, column=0, sticky="NSEW")
     convert_button.bind("<Enter>", lambda e: convert_button.config(bg='#e5f0f0', fg="#070d0d"))
     convert_button.bind("<Leave>", lambda e: convert_button.config(bg="#FFFFFF", fg="#3B6869"))
-
-    # Setting main window size and background color
-    root.geometry("600x350")
-    root.configure(bg="#3B6869")
 
     # Starting the GUI loop
     root.mainloop()
