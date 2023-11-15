@@ -1,3 +1,6 @@
+
+<img src="https://github.com/JordanRobo/Pig_Latin_Translator/assets/147454240/4fd82e48-4a35-4316-9ad2-3e25e1da9bf1" alt="Pig Icon" width="200px">
+
 # Pig Latin Translator
 
 ## About This Project
